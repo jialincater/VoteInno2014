@@ -24,3 +24,4 @@ data2 = urllib.urlencode({'project_id':'91'})
 req2 = urllib2.Request(url='http://buptvote.com/vote/index.php/vote/create',data=data2)
 res = urllib2.urlopen(req2).read()
 print eval(res)['state']
+print "END"
